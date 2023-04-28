@@ -54,17 +54,17 @@
             <span class="author-block">
               <a href="https://vml.kaist.ac.kr/main/people/person/151">Sihun Cha</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://seokg.github.io/">Kwanggyoon Seo</a><sup>2</sup>,</span>
+              <a href="https://seokg.github.io/">Kwanggyoon Seo</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://vml.kaist.ac.kr/main/people/person/140">Amirsaman Ashtari</a><sup>2</sup>,
+              <a href="https://vml.kaist.ac.kr/main/people/person/140">Amirsaman Ashtari</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://vml.kaist.ac.kr/main/people/person/1">Junyong Noh</a><sup>2</sup>,
+              <a href="https://vml.kaist.ac.kr/main/people/person/1">Junyong Noh</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</supVisual Media Lab, KAIST</span>
+            <span class="author-block"><sup>1</sup>Visual Media Lab, KAIST</span>
           </div>
 
           <div class="column has-text-centered">
@@ -101,11 +101,16 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
+        <!-- <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/steve.mp4"
                     type="video/mp4">
           </video>
+        </div> -->
+        <div class="column is-full-width">
+          <img src="./static/images/0_teaser_image.png"
+                 class="teaser-image" 
+                 alt="teaser image."/>
         </div>
         <!-- <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
@@ -163,10 +168,6 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
             There has been significant progress in generating an animatable 3D human avatar from a single image. 
             However, recovering texture for the 3D human avatar from a single image has been relatively less addressed. 
             Because the generated 3D human avatar reveals the occluded texture of the given image as it moves, 
@@ -174,6 +175,8 @@
             To generate a plausible texture map for 3D human avatars, 
             the occluded texture pattern needs to be synthesized with respect to the visible texture from the given image. 
             Moreover, the generated texture should align with the surface of the target 3D mesh. 
+          </p>
+          <p>
             In this paper, we propose a texture synthesis method for a 3D human avatar that incorporates geometry information. 
             The proposed method consists of two convolutional networks for the sampling and refining process. 
             The sampler network fills in the occluded regions of the source image and 
@@ -189,6 +192,10 @@
       </div>
     </div>
     <!--/ Abstract. -->
+    <h2 class="title is-3">Overview</h2>
+    <img src=".static/images/1_model_overview.jpg"
+                 class="overview-image" 
+                 alt="overview image."/>
 
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
@@ -242,8 +249,8 @@
           </div>
 
         </div>
-      </div>
-    </div> -->
+      </div>-->
+    </div> 
     <!--/ Matting. -->
 
     <!-- Animation. -->
