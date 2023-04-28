@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [Project Page](https://chacorp.github.io/sample-refine.github.io/).
 
-citaiton:
+citation:
 ```
 
 ```
