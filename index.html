@@ -243,8 +243,8 @@
     <!-- <div class="columns is-centered"> -->
 
       <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
+      <!-- <div class="column"> -->
+        <!-- <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
             Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
@@ -254,8 +254,8 @@
             <source src="./static/videos/dollyzoom-stacked.mp4"
                     type="video/mp4">
           </video>
-        </div>
-      </div> -->
+        </div> -->
+      <!-- </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
@@ -280,40 +280,63 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <!-- <h2 class="title is-3">Animation</h2> -->
+        <h2 class="title is-3">Methods</h2>
 
         <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
+        <h3 class="title is-4">Sampling</h3>
+
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            SamplerNet samples and alignes the given texture to produce fully mapped texture.
           </p>
         </div>
+
+        <!-- <div class="content has-text-centered">
+          <video id="video-sampling"
+                autoplay
+                controls
+                muted
+                loop
+                preload
+                playsinline
+                width="75%">
+            <source src="./static/videos/sampling.mp4" type="video/mp4">
+          </video>
+        </div> -->
+
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
+            <img src="./static/images/sampling-0.png"
                  class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+                 alt="reference image."/>
+            <p>Input</p>
           </div>
           <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
+            <video id="video-sampling"
+                autoplay
+                controls
+                muted
+                loop
+                preload
+                playsinline
+                width="75%">
+            <source src="./static/videos/sampling.mp4" type="video/mp4">
+          </video>
+            <!-- <div id="interpolation-image-wrapper">
               Loading...
             </div>
             <input class="slider is-fullwidth is-large is-info"
                    id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
+                   step="1" min="0" max="100" value="0" type="range"> -->
           </div>
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
+            <img src="./static/images/rendered_generated.png"
                  class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+                 alt="rendered image."/>
+            <p class="is-bold">Output</p>
           </div>
         </div>
-        <br/> -->
+        <br/>
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
