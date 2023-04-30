@@ -332,7 +332,7 @@
     <div class="columns is-vcentered interpolation-panel">
       <div class="column has-text-centered">
         <img src="./static/images/sampling-proj.png"
-              style="width:90%"
+              style="width:80%"
               class="interpolation-image"
               alt="reference image."/>
         <p>Projecting image to the 3D mesh</p>
@@ -342,7 +342,7 @@
 
       <div class="column has-text-centered">
         <img src="./static/images/sampling-mapped.png"
-              style="width:90%"
+              style="width:80%"
               class="interpolation-image"
               alt="mapped image."/>
         <p class="is-bold">Mapped texture</p>
@@ -360,7 +360,7 @@
             loop
             preload
             playsinline
-            width="90%">
+            width="80%">
         <source src="./static/videos/sampling.mp4" type="video/mp4">
         </video>
         <p>Sampling and Aligning</p>
@@ -383,7 +383,6 @@
       </p>
     </div>
     <div class="columns is-vcentered interpolation-panel">
-            
       <p class="text-20px">(</p>
       <div class="column has-text-centered">
         <img src="./static/images/sampled_texture.png"
@@ -392,9 +391,9 @@
               alt="sampled texture image."/>
         <p>Sampled texture</p>
       </div>
-
+    
       <p class="text-20px"> * </p>
-
+    
       <div class="column has-text-centered">
         <img src="./static/images/blend_mask.png"
               style="height:40%"
@@ -402,11 +401,11 @@
               alt="mask image."/>
         <p>Blend mask</p>
       </div>
-
+    
       <p class="text-20px">)</p>
       <p class="text-20px"> + </p>
       <p class="text-20px">(</p>
-
+    
       <div class="column has-text-centered">
         <img src="./static/images/blend_mask_minus.png"
               style="height:50%"
@@ -414,9 +413,9 @@
               alt="sub blend mask image."/>
         <p>(1- Blend mask)</p>
       </div>
-
+    
       <p class="text-20px"> * </p>
-
+    
       <div class="column has-text-centered">
         <img src="./static/images/refine_texture.png"
               style="height:40%"
@@ -424,10 +423,12 @@
               alt="refine texture image."/>
         <p>Refine texture</p>
       </div>
-
+    
       <p class="text-20px">)</p>
       <p class="text-20px"> = </p>
-
+    </div>
+    
+    <div class="columns is-vcentered interpolation-panel">
       <div class="column has-text-centered">
         <img src="./static/images/ren_output.png"
               style="height:50%"
@@ -435,15 +436,15 @@
               alt="final image."/>
         <p>Final texture map</p>
       </div>
-
     </div>
+
     <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
         <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            Using Nerfies, you can re-render a video from a novel
             viewpoint such as a stabilized camera by playing back the training deformations.
           </p>
         </div>
