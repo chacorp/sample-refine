@@ -104,7 +104,7 @@
         <img class="round" style="width:1024px" src="./static/images/0_teaser_image.png"/>
       <!-- </div> -->
       <h2 class="subtitle has-text-centered">
-        Given a single image, our method generates a texture map with respect to the target 3D human mesh by synthesizing textural patterns in the invisible regions of the source image as well as aligning the texture to the surface of the geometry.
+        Given a single image, our method generates a texture map with respect to the target 3D human mesh using sampling and refinement strategies.
       </h2>
     </div>
   </div>
@@ -320,7 +320,7 @@
     </div>
 
     <!-- Interpolating. -->
-    <h3 class="title is-4">Sampling</h3>
+    <h3 class="title is-4">SamplerNet</h3>
 
     <div class="content has-text-justified">
       <p>
@@ -335,6 +335,7 @@
               style="width:60%"
               class="interpolation-image"
               alt="reference image."/>
+        <p>Projection</p>
       </div>
 
       <!-- <div class="column has-text-centered">
@@ -357,7 +358,8 @@
             playsinline
             width="100%">
         <source src="./static/videos/sampling.mp4" type="video/mp4">
-      </video>
+        </video>
+        <p>Sampling and Aligning</p>
         <!-- <div id="interpolation-image-wrapper">
           Loading...
         </div>
