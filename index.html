@@ -338,13 +338,13 @@
         <p>Projecting image to the 3D mesh</p>
       </div>
 
-      <!-- <div class="column has-text-centered">
-        <img src="./static/images/sampling-1.png"
+      <div class="column has-text-centered">
+        <img src="./static/images/sampling-mapped.png"
               style="width:50%"
               class="interpolation-image"
-              alt="rendered image."/>
-        <p class="is-bold">Output</p>
-      </div> -->
+              alt="mapped image."/>
+        <p class="is-bold">Mapped texture</p>
+      </div>
       
       <!-- <div class="column is-vcentered interpolation-video-column"> -->
         <!-- <div class="column is-3 interpolation-video-column"> -->
@@ -377,6 +377,36 @@
       <p>
         After SamplerNet completes the partial texture, the resulting texture map is refined using RefinerNet.
       </p>
+    </div>
+    <div class="columns is-vcentered interpolation-panel">
+      <div class="column has-text-centered">
+        <img src="./static/images/sampled_texture.png"
+              style="width:50%"
+              class="interpolation-image"
+              alt="sampled texture image."/>
+        <p>Sampled texture</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./static/images/blend_mask.png"
+              style="width:50%"
+              class="interpolation-image"
+              alt="mask image."/>
+        <p>Blend mask</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./static/images/blend_mask_minus.png"
+              style="width:50%"
+              class="interpolation-image"
+              alt="sub blend mask image."/>
+        <p>1- Blend mask</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./static/images/refine_texture.png"
+              style="width:60%"
+              class="interpolation-image"
+              alt="refine texture image."/>
+        <p>Refine texture</p>
+      </div>
     </div>
     <!--/ Interpolating. -->
 
