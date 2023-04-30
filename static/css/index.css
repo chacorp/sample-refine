@@ -176,3 +176,14 @@ body {
   padding-left: 0;
 }
 
+
+.round {
+  height: 100%;
+  object-fit: cover;
+}
+
+video {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
