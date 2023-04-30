@@ -166,11 +166,11 @@ body {
 .media-left {
   flex: 1;
   text-align: center;
-  padding-right: 10px;
+  padding-right: 0;
 }
 
 .media-right {
   flex: 1;
   text-align: center;
-  padding-left: 10px;
+  padding-left: 0;
 }
