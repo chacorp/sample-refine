@@ -160,7 +160,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  width: 100%;
 }
 
 .media-left {
@@ -176,14 +176,3 @@ body {
   padding-left: 0;
 }
 
-.round {
-  border-radius: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-
-video {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-}
