@@ -187,3 +187,7 @@ video {
   width: auto;
   object-fit: cover;
 }
+
+.text-20px {
+  font-size: 20px;
+}
