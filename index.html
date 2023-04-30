@@ -101,7 +101,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <img style="width:1024px" src="./static/images/0_teaser_image.png"/>
+        <img class="round" style="width:1024px" src="./static/images/0_teaser_image.png"/>
       <!-- </div> -->
     </div>
   </div>
@@ -299,58 +299,60 @@
     <div class="columns is-centered">
       <div class="column is-full-width has-text-centered">
         <h2 class="title is-3">Methods</h2>
+      </div>
+    </div>
+    
+    <!-- Interpolating. -->
+    <h3 class="title is-4">Sampling</h3>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Sampling</h3>
+    <div class="content has-text-justified">
+      <p>
+        SamplerNet fills in the occluded regions of the source image and aligns the texture with the surface of the target 3D mesh
+        using the geometry information.
+      </p>
+    </div>
 
-        <div class="content has-text-justified">
-          <p>
-            SamplerNet fills in the occluded regions of the source image and aligns the texture with the surface of the target 3D mesh
-            using the geometry information.
-          </p>
+    <div class="columns is-vcentered interpolation-panel">
+      <div class="column has-text-centered">
+        <img src="./static/images/sampling-proj.png"
+              style="width:50%"
+              class="interpolation-image"
+              alt="reference image."/>
+      </div>
+
+      <!-- <div class="column has-text-centered">
+        <img src="./static/images/sampling-1.png"
+              style="width:50%"
+              class="interpolation-image"
+              alt="rendered image."/>
+        <p class="is-bold">Output</p>
+      </div> -->
+      
+      <!-- <div class="column is-vcentered interpolation-video-column"> -->
+        <!-- <div class="column is-3 interpolation-video-column"> -->
+      <div class="column has-text-centered">
+        <video id="video-sampling"
+            autoplay
+            controls
+            muted
+            loop
+            preload
+            playsinline
+            width="100%">
+        <source src="./static/videos/sampling.mp4" type="video/mp4">
+      </video>
+        <!-- <div id="interpolation-image-wrapper">
+          Loading...
         </div>
+        <input class="slider is-fullwidth is-large is-info"
+                id="interpolation-slider"
+                step="1" min="0" max="100" value="0" type="range"> -->
+      </div>
+      
 
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column has-text-centered">
-            <img src="./static/images/sampling-0.png"
-                 style="width:50%"
-                 class="interpolation-image"
-                 alt="reference image."/>
-          </div>
-
-          <!-- <div class="column has-text-centered">
-            <img src="./static/images/sampling-1.png"
-                 style="width:50%"
-                 class="interpolation-image"
-                 alt="rendered image."/>
-            <p class="is-bold">Output</p>
-          </div> -->
-          
-          <!-- <div class="column is-vcentered interpolation-video-column"> -->
-            <!-- <div class="column is-3 interpolation-video-column"> -->
-          <div class="column has-text-centered">
-            <video id="video-sampling"
-                autoplay
-                controls
-                muted
-                loop
-                preload
-                playsinline
-                width="100%">
-            <source src="./static/videos/sampling.mp4" type="video/mp4">
-          </video>
-            <!-- <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range"> -->
-          </div>
-          
-
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
+    </div>
+    <br/>
+    <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
         <!-- <h3 class="title is-4">Re-rendering the input video</h3>
@@ -373,8 +375,6 @@
         </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
     <!--/ Animation. -->
 
 
