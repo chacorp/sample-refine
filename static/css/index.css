@@ -188,6 +188,6 @@ video {
   object-fit: cover;
 }
 
-.text-20px {
-  font-size: 20px;
+.textsize {
+  font-size: 30px;
 }
