@@ -102,7 +102,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
         <img class="round" style="width:1024px" src="./static/images/0_teaser_image.png"/>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </section>
@@ -112,7 +112,11 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-000012">
-          <img class="round" style="height:100%" src=".static/images/image_000012.png"/>
+          <img class="round" style="height:100%" src="./static/images/image_000012.png"/>
+          <!-- <img src="./static/images/sampling-0.png"
+                 class="interpolation-image"
+                 alt="reference image."/> -->
+
           <video poster="" id="000012" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/000012.mp4" type="video/mp4">
           </video>
@@ -279,7 +283,7 @@
 
     <!-- Animation. -->
     <div class="columns is-centered">
-      <div class="column is-full-width">
+      <div class="column is-full-width has-text-centered">
         <h2 class="title is-3">Methods</h2>
 
         <!-- Interpolating. -->
@@ -311,7 +315,7 @@
                  alt="reference image."/>
             <p>Input</p>
           </div>
-          <div class="column interpolation-video-column">
+          <div class="column is-vcentered interpolation-video-column">
             <video id="video-sampling"
                 autoplay
                 controls
@@ -424,8 +428,9 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is borrowed from <a
+            This website code is borrowed from <a
               href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            We thank the authors for sharing the templates.
           </p>
           <p>
             This website is licensed under a <a rel="license"
