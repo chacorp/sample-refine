@@ -101,7 +101,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <img class="round" style="width:1024px" src="./static/images/0_teaser_image.png"/>
+        <img style="width:1024px" src="./static/images/0_teaser_image.png"/>
       <!-- </div> -->
     </div>
   </div>
@@ -305,14 +305,15 @@
 
         <div class="content has-text-justified">
           <p>
-            SamplerNet samples and alignes the given texture to produce fully mapped texture.
+            SamplerNet fills in the occluded regions of the source image and aligns the texture with the surface of the target 3D mesh
+            using the geometry information.
           </p>
         </div>
 
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
             <img src="./static/images/sampling-0.png"
-                 style="width:70%"
+                 style="width:50%"
                  class="interpolation-image"
                  alt="reference image."/>
           </div>
