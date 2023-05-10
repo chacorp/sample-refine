@@ -4,7 +4,15 @@ This is the repository that contains source code for the [Project Page](https://
 
 citation:
 ```
-
+@article {10.1111:cgf.14769,
+  journal = {Computer Graphics Forum},
+  title = {{Generating Texture for 3D Human Avatar from a Single Image using Sampling and Refinement Networks}},
+  author = {Cha, Sihun and Seo, Kwanggyoon and Ashtari, Amirsaman and Noh, Junyong},
+  year = {2023},
+  publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
+  ISSN = {1467-8659},
+  DOI = {10.1111/cgf.14769}
+  }
 ```
 
 # Website License
